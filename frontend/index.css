@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4ff;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn.upload {
+  background-color: #3b82f6;
+}
+
+.btn.save {
+  background-color: #10b981;
+}
+
+.btn.download {
+  background: linear-gradient(45deg, #9333ea, #ec4899);
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.section h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.summary-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+textarea {
+  flex: 1;
+  height: 100px;
+}
+
+.enhance-btn {
+  background: linear-gradient(45deg, #ec4899, #9333ea);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.add-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-top: 8px;
+  cursor: pointer;
+}
