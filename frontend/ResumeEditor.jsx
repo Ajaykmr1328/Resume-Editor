@@ -190,7 +190,23 @@ const ResumeEditor = () => {
   return (
     <div className="min-h-screen bg-[#f6f9ff] p-4">
       <div className="max-w-3xl mx-auto">
-        <div className="bg-white rounded-xl shadow-md p-6">
+        <div className="bg-white rounded-xl shadow-md p-6"><div className="flex justify-between items-center mb-6">
+            <h1 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+              <FileText className="text-blue-600" /> Resume Editor
+            </h1>
+            <div className="flex gap-2">
+              <button onClick={() => fileInputRef.current?.click()} className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                <Upload size={16} /> Upload
+              </button>
+              <button onClick={saveResume} className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
+                <Save size={16} /> Save
+              </button>
+              <button onClick={downloadResume} className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700">
+                <Download size={16} /> Download
+              </button>
+            </div>
+            <input ref={fileInputRef} type="file" accept=".pdf,.docx" onChange={handleFileUpload} className="hidden" />
+          </div>
           {/* Personal Information */}
           <section className="mb-8">
             <h2 className="text-lg font-semibold text-gray-900 mb-4">Personal Information</h2>
